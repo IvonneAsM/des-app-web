@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>convertirFahrenheitACelsius</title>
+    </head>
+    <script language="JavaScript">
+       function convertirCelsius_A_Fahrenheit(celsius){
+    let resultado = celsius* 9 /5.0 + 32;
+    return resultado;
+}
+
+function convertirFahrenheit_A_Celsius(Fahrenheit){
+    let resultado= (Fahrenheit - 32) * 5/9.0;
+    return resultado;
+}
+
+let celsius = 32;
+let resultado = convertirCelsius_A_Fahrenheit(celsius);
+console.log(`${celsius}°C = ${resultado}°F`);
+
+let Fahrenheit = resultado;
+resultado = convertirFahrenheit_A_Celsius(Fahrenheit);
+console.log(`${Fahrenheit}°F = ${resultado}°C`); 
+
+</script>
+</html>
